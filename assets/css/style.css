@@ -1,0 +1,322 @@
+/* ================= General Styles ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Fonts & Colors 
+font-family: 'Roboto', sans-serif;
+Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.p1 {
+    font-size: 1.8rem; 
+    line-height: 32px; 
+    font-weight: 300;
+}
+
+.p2 {
+    font-size: 2.4rem; 
+    line-height: 36px; 
+    font-weight: 300;
+}
+
+.p3 {
+    font-size: 1.2rem; 
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 5.5rem;
+    word-break: keep-all;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2vh; 
+}
+
+.firstLayout {
+    width: 80%;
+    margin: 20vh 10vw; 
+}
+
+.secondLayout {
+    width: 70%;
+    margin: 20vh 12vw; 
+}
+
+/* ================= Header Styles ================= */
+
+header {
+    background: url("../img/ilustracion1.png"); 
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 100vh; 
+}
+
+header > nav {
+    display: flex; 
+    margin: 0 0 0 2vw; 
+}
+
+header nav > div {
+    margin-left: 3.5vw; 
+}
+
+#logo {
+    width: 35px; 
+    padding-top: 2vh; 
+    position: fixed;
+    top: 0;
+}
+
+#logoNav {
+    font-weight: bold;
+    font-size: 2.5rem; 
+    padding-top: 2vh; 
+}
+
+header section {
+    display: flex; 
+    align-items: flex-start;
+}
+
+header section div:nth-of-type(1) {
+    width: 80vw; 
+}
+
+header section div:nth-of-type(1) h1 {
+    font-size: 7.2rem;
+}
+
+#pHeader {
+    margin: 2vh 0 15vh 0; 
+}
+
+header section div:nth-of-type(2) img{
+    width: 500px; 
+    position: relative;
+    animation-name: jumpingMan;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jumpingMan {
+    from {top: -25px;}
+    10% {top: -20px;}
+    20% {top: -15px;}
+    30% {top: -10px;}
+    40% {top: -5px;}
+    50% {top: 0px;}
+    60% {top: -5px;}
+    70% {top: -10px;}
+    80% {top: -15px;}
+    90% {top: -20px;}
+    to {top: -25px;}
+}
+
+#headerScroll {
+    text-decoration: none;
+    color: #ff3571; 
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* ================= Image Section ==================== */
+#coverImg {
+    width: 100vw; 
+    margin: 10vh 0 10vh 0; 
+}
+
+/* ================= Main ================= */
+
+
+/* --------------- Main: 1. part --------------- */
+
+#firstPart {
+    display: flex; 
+    align-items: flex-start;
+} 
+
+#firstPart h2 {
+    width: 23vw; 
+}
+
+#ideaIcon {
+    height: 66px; 
+}
+
+#firstPart p {
+    width: 40vw; 
+    margin-left: auto; 
+}
+
+/* --------------- Main: 2. part --------------- */
+main section:nth-of-type(1) {
+    width: 48vw; 
+}
+
+/* --------------- Main: 3. part --------------- */
+
+main section:nth-of-type(2) > div {
+    display: flex; 
+    justify-content: space-between;
+}
+
+main section:nth-of-type(2) article {
+    width: 30vw; 
+    margin-top: 8vh;
+    display: flex; 
+    align-items: flex-start; 
+}
+
+main section:nth-of-type(2) article img {
+    width: 25px; 
+    margin-right: 2vw; 
+}
+
+/* --------------- Main: 4. part (center) --------------- */
+
+
+.centeredLayout {
+    text-align: center;
+    width: 60%; 
+    margin: 20vh auto; 
+}
+
+.centeredLayout h2 {
+    margin-bottom: 4vh; 
+}
+
+
+
+
+
+/* --------------- Main: 5. part (left-right) --------------- */
+main section:nth-of-type(3) div {
+    display: flex; 
+    justify-content: center; 
+    margin: 10vh 10vw; 
+}
+
+main section:nth-of-type(3) div:nth-of-type(odd) > img {
+    order: 0;  
+    margin-right: 7vw; 
+}
+
+main section:nth-of-type(3) div:nth-of-type(even) > img {
+    order: 1;  
+    margin-left: 4vw; 
+}
+
+.number {
+    font-weight: bold;
+    font-size: 7rem;
+    color: #dddddd; 
+    margin-bottom: 3vh;
+}
+
+.stepIcon {
+    width: 30px; 
+    margin-bottom: 2vh;
+}
+
+main section:nth-of-type(3) div > img {
+    width: 35vw;  
+}
+
+main section:nth-of-type(3) div > article {
+    width: 45vw;  
+}
+
+/* --------------- Main: 6. part: centered --------------- */
+
+main > article:nth-of-type(3) {
+    text-align: center;
+}
+
+main > article:nth-of-type(3) h2 {
+    margin-bottom: 7vh; 
+}
+
+main > article:nth-of-type(3) > div h3 {
+    margin-top: 3vh; 
+}
+
+
+/* After Subscribe */
+
+main > article:nth-of-type(3) > div:nth-of-type(1)  {
+    display: none; 
+    box-shadow: 0px 0px 30px 5px #ff3571;
+    padding: 10px; 
+}
+
+main > article:nth-of-type(3) > div:nth-of-type(1) button {
+    width: 30%; 
+    background: #ff3571; 
+    color: white; 
+    margin: 3vh auto;
+    padding: 2% 10%; 
+    font-size: 2rem;
+    border: none; 
+    text-align: center; 
+}
+
+main > article:nth-of-type(3) > div:nth-of-type(1) button:hover {
+    background: linear-gradient(to right, #ff3571, #3C30FF);
+}
+
+main > article:nth-of-type(3) > div h3 {
+    margin-top: 3vh; 
+}
+
+/* Before Subscribe */
+
+main > article:nth-of-type(3) form input {
+    display: block; 
+    padding: 2% 10%; 
+    font-size: 2rem;
+    border: none; 
+    text-align: center; 
+}
+
+main > article:nth-of-type(3) form input:nth-of-type(1) {
+    width: 70%; 
+    box-shadow: 0px 0px 30px 5px #dddddd;
+    margin: 7vh auto; 
+}
+
+main > article:nth-of-type(3) form input:nth-of-type(2) {
+    width: 30%; 
+    background: #ff3571; 
+    color: white; 
+    margin: 0 auto;
+}
+
+main > article:nth-of-type(3) form input:nth-of-type(2):hover {
+    background: linear-gradient(to right, #ff3571, #3C30FF);
+}
+
+/* ================= Footer ================= */
+
+footer {
+    padding: 2vh 10vw; 
+    display: flex;
+}
+
+footer img {
+    height: 25px; 
+}
